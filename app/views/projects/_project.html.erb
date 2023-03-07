@@ -1,0 +1,17 @@
+<div id="<%= dom_id project %>">
+  <% if params[:action] == 'index' && params[:controller] == 'projects' %>
+    <p>
+      <strong>Title:</strong>
+      <%= project.title %>
+    </p>
+  <% elsif params[:action] == 'show' && params[:controller] == 'projects' %>
+    <p>
+      <strong>Title:</strong>
+      <%= project.title %>
+    </p>
+    <p>
+      <strong>Content:</strong>
+      <%= project.content %>
+    </p>
+  <% end %>
+</div>

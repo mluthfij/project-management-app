@@ -11,6 +11,12 @@
   </head>
 
   <body>
-    <%= yield %>
+    <hr>
+      <%= link_to 'Home', root_path %> ||
+      <%= link_to 'Projects', projects_path %>
+    <hr>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>
